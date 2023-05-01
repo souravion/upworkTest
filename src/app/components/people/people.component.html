@@ -1,0 +1,28 @@
+<div class="container my-5">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="row">
+                <div class="col-sm-6 col-lg-4 mb-4" *ngFor="let item of peopels">
+                    <div class="candidate-list candidate-grid">
+                        <div class="candidate-list-image">
+                            <img class="img-fluid" src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+                        </div>
+                        <div class="candidate-list-details">
+                            <div class="candidate-list-info">
+                                <div class="candidate-list-title">
+                                    <h5><a href="">{{item.firstName}} {{item.lastName}}</a></h5>
+                                </div>
+                                <div class="candidate-list-option">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-filter pr-1"></i>{{item.workTitle}}</li>
+                                        <li><i class="fas fa-map-marker-alt pr-1"></i>{{'Age'}}: {{item.age}}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
